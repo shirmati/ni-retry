@@ -1,14 +1,71 @@
 {
-  "name": "ni-retry",
-  "version": "0.0.1",
+  "_args": [
+    [
+      {
+        "raw": "ni-retry@file:../ni-retry",
+        "scope": null,
+        "escapedName": "ni-retry",
+        "name": "ni-retry",
+        "rawSpec": "file:../ni-retry",
+        "spec": "/home/z/dev/ni-retry",
+        "type": "directory"
+      },
+      "/home/z/dev/cirrus-bos"
+    ]
+  ],
+  "_from": "../ni-retry",
+  "_id": "ni-retry@0.0.1",
+  "_inCache": true,
+  "_location": "/ni-retry",
+  "_phantomChildren": {
+    "buffer-shims": "1.0.0",
+    "core-util-is": "1.0.2",
+    "es6-promise": "3.2.1",
+    "inherits": "2.0.3",
+    "isarray": "1.0.0",
+    "lodash": "4.17.4",
+    "mpromise": "0.5.5",
+    "ms": "2.0.0",
+    "process-nextick-args": "1.0.7",
+    "regexp-clone": "0.0.1",
+    "require_optional": "1.0.0",
+    "sliced": "1.0.1",
+    "util-deprecate": "1.0.2"
+  },
+  "_requested": {
+    "raw": "ni-retry@file:../ni-retry",
+    "scope": null,
+    "escapedName": "ni-retry",
+    "name": "ni-retry",
+    "rawSpec": "file:../ni-retry",
+    "spec": "/home/z/dev/ni-retry",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "file:../ni-retry",
+  "_shasum": "c122e98f7fd1056a0e0a210b03d4dabbae235540",
+  "_shrinkwrap": null,
+  "_spec": "ni-retry@file:../ni-retry",
+  "_where": "/home/z/dev/cirrus-bos",
+  "author": {
+    "name": "Shir Matishevski and Zachary Erskine"
+  },
+  "dependencies": {
+    "mongoose": "^4.10.5"
+  },
   "description": "A generic retry system for node-based microservices.",
+  "devDependencies": {},
+  "gitHead": "a2b89cbe4b358d9ff364ad183e9181e41a3b46bf",
+  "license": "ISC",
   "main": "index.js",
+  "name": "ni-retry",
+  "optionalDependencies": {},
+  "readme": "# ni-retry\n",
+  "readmeFilename": "README.md",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shir Matishevski and Zachary Erskine",
-  "license": "ISC",
-  "dependencies": {
-    "mongoose": "^4.10.5"
-  }
+  "version": "0.0.1"
 }
