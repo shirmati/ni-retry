@@ -1,0 +1,14 @@
+{
+  "name": "ni-retry",
+  "version": "0.0.1",
+  "description": "A generic retry system for node-based microservices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shir Matishevski and Zachary Erskine",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.10.5"
+  }
+}
