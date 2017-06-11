@@ -53,7 +53,8 @@
     "name": "Shir Matishevski and Zachary Erskine"
   },
   "dependencies": {
-    "mongoose": "^4.10.5"
+    "mongoose": "^4.10.5",
+    "ni-context": "*"
   },
   "description": "A generic retry system for node-based microservices.",
   "devDependencies": {},

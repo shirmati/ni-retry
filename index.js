@@ -1,11 +1,12 @@
 'use strict';
 
-const middleware = {
-    retryMiddleware : require('./lib/middleware/retry-middleware')
-};
-const registerRealtimeSchemas = require('./lib/helpers/dbInit');
+module.exports = function(db, serviceName) {
 
-const niRetry = {
-middleware,registerRealtimeSchemas
+  return {
+    middleware: {
+      retryMiddleware: require('./lib/middleware/retry-middleware')(db,serviceName),
+      auditLogMiddleware: require('./lib/middleware/audit-log-middleware')(db,serviceName),
+    },
+    registerRealtimeSchemas : require('./lib/helpers/dbInit')(db)
+  }
 };
-module.exports = niRetry;
