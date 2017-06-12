@@ -1,13 +1,12 @@
 'use strict';
 
-module.exports = function(app,db, serviceName) {
+module.exports = function(app,db, serviceName,niRetryServiceMapping) {
   let instance;
 
   if (!instance){
     instance = {
       middleware: {
-        retryMiddleware: require('./lib/middleware/retry-middleware')(app,db,serviceName),
-        auditLogMiddleware: require('./lib/middleware/audit-log-middleware')(db,serviceName),
+        retryMiddleware: require('./lib/middleware/retry-middleware')(app,db,serviceName,niRetryServiceMapping)
       },
       helpers: {
         dbHelper: require('./lib/helpers/dbHelper')(db,serviceName)
